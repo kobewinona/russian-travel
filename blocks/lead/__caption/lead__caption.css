@@ -1,17 +1,24 @@
 .lead__caption {
+  width: calc(100% - (16px * 2));
+  max-width: 720px;
+
   font-weight: 400;
   font-size: 10px;
   line-height: 14px;
 
-  display: block;
-
-  margin: 8px auto 0 auto;
+  margin: 8px auto;
 }
 
-@media (max-width: 768px) {
-
+@media (min-width: 768px) {
   .lead__caption {
-    margin: 8px 24px 0 24px;
+    width: calc(100% - (24px * 2));
+    max-width: 928px;
   }
+}
 
+@media (min-width: 1024px) {
+  .lead__caption {
+    width: calc(100% - (48px * 2));
+    max-width: 984px;
+  }
 }

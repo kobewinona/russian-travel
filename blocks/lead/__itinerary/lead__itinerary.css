@@ -1,9 +1,8 @@
 .lead__itinerary {
-  width: calc(100% - (24px * 2));
+  width: 95%;
 
-  display: block;
   position: absolute;
 
-  top: 14%;
-  left: 24px;
+  top: 15%;
+  left: 2.5%;
 }

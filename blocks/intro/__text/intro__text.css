@@ -1,5 +1,5 @@
 .intro__text {
-  max-width: 690px;
+  max-width: 720px;
 
   font-weight: 400;
   font-size: 16px;
@@ -8,16 +8,8 @@
   margin: 40px 0 0 0;
 }
 
-@media (min-width: 1281px) {
-
+@media (min-width: 1024px) {
   .intro__text {
-    max-width: 890px;
-  }
-}
-
-@media (max-width: 767px) {
-
-  .intro__text {
-    font-size: 16px;
+    max-width: 690px;
   }
 }

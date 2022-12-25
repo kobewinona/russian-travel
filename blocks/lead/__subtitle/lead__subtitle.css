@@ -2,31 +2,18 @@
   max-width: 640px;
 
   font-weight: 400;
-  font-size: 30px;
-  line-height: 36px;
+  font-size: clamp(16px, 4.5vw, 30px);
+  line-height: clamp(20px, 5vw, 36px);
   text-align: center;
 
   display: block;
 
   margin: 0 auto;
-  padding-top: 32px;
+  padding: 16px 16px 0 16px;
 }
 
-@media (max-width: 767px) {
-
+@media (min-width: 768px) {
   .lead__subtitle {
-    font-size: 16px;
-    line-height: 20px;
-
-    padding-top: 16px;
+    padding-top: 32px;
   }
-
-}
-
-@media (max-width: 672px) {
-
-  .lead__subtitle {
-    margin: 0 16px;
-  }
-
 }
