@@ -1,24 +1,21 @@
-.intro {
-  width: calc(100% - (16px * 2));
-  max-width: 720px;
-
-  margin: 64px auto;
+.places {
+  margin: 64px 0 66px 0;
 }
 
 @media (min-width: 768px) {
-  .intro {
+  .places {
     width: calc(100% - (24px * 2));
     max-width: 928px;
 
-    margin: 88px auto;
+    margin: 88px auto 90px auto;
   }
 }
 
 @media (min-width: 1024px) {
-  .intro {
+  .places {
     width: calc(100% - (48px * 2));
     max-width: 984px;
 
-    margin: 92px auto;
+    margin: 92px auto 92px auto;
   }
 }

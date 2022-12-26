@@ -1,26 +1,28 @@
-.header {
+.footer {
   width: calc(100% - (16px * 2));
 
-  display: flex;
-  justify-content: space-between;
-
-  margin: 16px auto 0 auto;
+  margin: 64px auto 24px auto;
 }
 
 @media (min-width: 768px) {
-  .header {
+  .footer {
     width: calc(100% - (24px * 2));
     max-width: 928px;
 
-    margin: 28px auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 69px;
+
+    margin-top: 88px;
   }
 }
 
 @media (min-width: 1024px) {
-  .header {
+  .footer {
     width: calc(100% - (48px * 2));
     max-width: 1184px;
 
-    margin: 28px auto 0 auto;
+    margin-top: 92px;
   }
 }

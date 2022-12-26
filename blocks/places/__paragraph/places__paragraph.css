@@ -1,0 +1,35 @@
+.places__paragraph {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 163%;
+
+  margin: 0 0 25px 0;
+}
+
+.places__paragraph:last-child {
+  width: 100%;
+
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .places__paragraph {
+    width: 100%;
+
+    margin: 0 0 25px 0;
+  }
+
+  .places__paragraph:last-child {
+    width: 100%;
+
+    margin: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .places__paragraph {
+    font-size: 18px;
+    
+    margin: 0 0 27px 0;
+  }
+}

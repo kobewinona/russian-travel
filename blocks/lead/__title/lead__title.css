@@ -1,4 +1,5 @@
 .lead__title {
+  width: calc(100% - (16px * 2));
   max-width: 720px;
 
   color: #fff;
@@ -10,11 +11,4 @@
   display: block;
 
   margin: 0 auto;
-  padding: 48px 16px 0 16px;
-}
-
-@media (min-width: 1280px) {
-  .lead__title {
-    padding-top: 56px;
-  }
 }

@@ -1,4 +1,5 @@
 .lead__subtitle {
+  width: calc(100% - (16px * 2));
   max-width: 640px;
 
   font-weight: 400;
@@ -6,14 +7,11 @@
   line-height: clamp(20px, 5vw, 36px);
   text-align: center;
 
-  display: block;
-
-  margin: 0 auto;
-  padding: 16px 16px 0 16px;
+  margin: 16px auto 0 auto;
 }
 
 @media (min-width: 768px) {
   .lead__subtitle {
-    padding-top: 32px;
+    margin-top: 32px;
   }
 }
