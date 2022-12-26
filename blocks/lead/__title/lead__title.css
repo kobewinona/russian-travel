@@ -1,0 +1,14 @@
+.lead__title {
+  width: calc(100% - (16px * 2));
+  max-width: 720px;
+
+  color: #fff;
+  font-weight: 900;
+  font-size: clamp(40px, 12.5vw, 96px);
+  line-height: clamp(44px, 13.5vw, 100px);
+  text-align: center;
+
+  display: block;
+
+  margin: 0 auto;
+}

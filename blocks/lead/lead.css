@@ -1,0 +1,22 @@
+.lead {
+  margin: 48px auto;
+}
+
+@media (min-width: 768px) {
+  .lead {
+    max-width: 928px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lead {
+    width: calc(100% - (48px * 2));
+    max-width: 984px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .lead {
+    margin-top: 56px;
+  }
+}

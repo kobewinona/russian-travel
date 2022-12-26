@@ -1,0 +1,26 @@
+.places__title {
+  width: calc(100% - (16px * 2));
+  max-width: 720px;
+
+  font-weight: 900;
+  font-size: clamp(32px, 10vw, 42px);
+  line-height: clamp(35px, 10vw, 46px);
+
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .places__title {
+    width: 100%;
+
+    font-size: clamp(42px, 5.4vw, 72px);
+    line-height: clamp(46px, 5.9vw, 76px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .places__title {
+    font-size: 72px;
+    line-height: 76px;
+  }
+}

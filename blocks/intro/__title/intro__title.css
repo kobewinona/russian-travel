@@ -1,0 +1,15 @@
+.intro__title {
+  max-width: 720px;
+
+  font-weight: 900;
+  font-size: clamp(32px, 8vw, 54px);
+  line-height: clamp(35px, 8vw, 58px);
+
+  margin: 0;
+}
+
+@media (min-width: 1024px) {
+  .intro__title {
+    max-width: 690px;
+  }
+}

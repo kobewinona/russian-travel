@@ -1,0 +1,21 @@
+.places {
+  margin: 64px 0 66px 0;
+}
+
+@media (min-width: 768px) {
+  .places {
+    width: calc(100% - (24px * 2));
+    max-width: 928px;
+
+    margin: 88px auto 90px auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .places {
+    width: calc(100% - (48px * 2));
+    max-width: 984px;
+
+    margin: 92px auto 92px auto;
+  }
+}
