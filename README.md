@@ -1,6 +1,6 @@
 <h1 align="center">Russian Travel</h1>
 <h2 align="center">&copy; Dima Klimkin</h2>
-<p align="center"> <a href="https://github.com/kobewinona" target="_blank" rel="noreferrer"> <img src="https://cdn.iconscout.com/icon/free/png-256/github-163-761603.png" alt="github" width="40" height="40"/> </a> <a href="https://kobewinona.github.io/russian-travel/" target="_blank" rel="noreferrer"> <img src="images/README/page-image.png" alt="github pages" width="30" height="40"/> </a> </p>
+<p align="center"> <a href="https://github.com/kobewinona" target="_blank" rel="noreferrer"> <img src="https://cdn.iconscout.com/icon/free/png-256/github-163-761603.png" alt="github" width="40" height="40"/> </a> <a href="https://kobewinona.github.io/russian-travel/" target="_blank" rel="noreferrer"> <img src="https://i.postimg.cc/XJwN4H5Q/page-image.png" alt="github pages" width="30" height="40"/> </a> </p>
 
 <h3 align="center">languages and tools used in this project</h3>
 <p align="center"> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_vscode_icon_130084.png" alt="vscode" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://git-scm.com/images/logos/downloads/Git-Icon-Black.png" alt="css3" width="40" height="40"/> </a> <a href="https://en.bem.info/" target="_blank" rel="noreferrer"> <img src="https://miro.medium.com/max/1000/1*AGA-0gdD017hFbxeRR7vdQ.png" alt="css3" width="40" height="40"/> </a> </p>
@@ -164,12 +164,12 @@ font-family: 'Inter', sans-serif;
 
 Tag ```<picture>``` creates a small margin based on font-size:
 
-![margin](images/README/margin.png)
+![margin](https://i.postimg.cc/xCrTrDXX/margin.png)
 *margins beetwen an element in ```<picture>``` and ```<p>``` without specifying ```font-size```*
 
 <br>
 
-![no-margin](images/README/no-margin.png)
+![no-margin](https://i.postimg.cc/brgz2Z3n/no-margin.png)
 *margins beetwen an element in ```<picture>``` and ```<p>``` with specifying ```font-size```*
 
 <br>
@@ -198,12 +198,12 @@ Tag ```<picture>``` creates a small margin based on font-size:
 
 For some reason text in a browser doesn't wrap the way it does in a design template, even though all the parametres are specified in a markup.
 
-![template-wrap](images/README/template-wrap.png)
+![template-wrap](https://i.postimg.cc/QCh8tQks/template-wrap.png)
 *the second word is taking another line to fit the box it is in.*
 
 <br>
 
-![no-wrap](images/README/no-wrap.png)
+![no-wrap](https://i.postimg.cc/59S9rrbt/no-wrap.png)
 *the second word stays in one line with the first word.*
 
 The problem persists in **Chrome**, **FireFox** and **Safari**.
