@@ -1,6 +1,6 @@
 <h1 align="center">Russian Travel</h1>
 <h2 align="center">&copy; Dima Klimkin</h2>
-<p align="center"> <a href="https://github.com/kobewinona" target="_blank" rel="noreferrer"> <img src="https://cdn.iconscout.com/icon/free/png-256/github-163-761603.png" alt="github" width="40" height="40"/> </a> </p>
+<p align="center"> <a href="https://github.com/kobewinona" target="_blank" rel="noreferrer"> <img src="https://cdn.iconscout.com/icon/free/png-256/github-163-761603.png" alt="github" width="40" height="40"/> </a> <a href="https://kobewinona.github.io/russian-travel/" target="_blank" rel="noreferrer"> <img src="images/README/page-image.png" alt="github pages" width="30" height="40"/> </a> </p>
 
 <h3 align="center">languages and tools used in this project</h3>
 <p align="center"> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_vscode_icon_130084.png" alt="vscode" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://git-scm.com/images/logos/downloads/Git-Icon-Black.png" alt="css3" width="40" height="40"/> </a> <a href="https://en.bem.info/" target="_blank" rel="noreferrer"> <img src="https://miro.medium.com/max/1000/1*AGA-0gdD017hFbxeRR7vdQ.png" alt="css3" width="40" height="40"/> </a> </p>
@@ -9,10 +9,12 @@
 <br>
 
 - ► [about this project](#about)
-- ► [CSS syntax decoration I used in this project](#about)
+- ► [CSS syntax decoration I used in this project](#syntax)
 - ► [styling of this project](#styling)
 - ► [difficulties during this project](#difficulties)
+- ► [mobile-first vs desktop-first](#first)
 
+<br>
 <br>
 
 ----
@@ -21,19 +23,15 @@
 
 ----
 
-This project helped me to better understand basics of HTML and CSS languagues and VSCode and git tools. Also I finally singed up at GitHub which I never wanted to do before since I didn't recognize myself as a developer of any sorts (*still kind of hard to say that about myself since I'm still learing*). I've learnt a lot from building this small page. Most importanly I finally tried using git which scared me a lot before, but now I can do very simple commands and I actually understand what I'm doing (*most of the time* ☺).
+This project helped me to understand adaptive, flexible and responsive design. I've learnt a lot from building this small page.
 
-The webpage itself is about better ways to learn, remembering new information, mistakes in learning process that have a negative impact on how much of new information you actually absorb and can use well afterwards. While building this page I've learnt about Feynman method of learning which is well reviewed [here](https://www.colorado.edu/artssciences-advising/resource-library/life-skills/the-feynman-technique-in-academic-coaching), but to put it shortly here are the main principles:
-1. Step 1 – Study.
-2. Step 2 - Teach.
-3. Step 3 - Fill the Gaps.
-4. Step 4 - Simplify.
+The webpage itself is about travelling in Russia and its beauties.
 
-Also check ten major principles of effective learning by Josh Kaufman.
+<br>
 
 ----
 
-<h3 align="center"> <a name="about"> CSS syntax decoration I used in this project </a> </h3>
+<h3 align="center"> <a name="syntax"> CSS syntax decoration I used in this project </a> </h3>
 
 ----
 
@@ -124,6 +122,8 @@ dev {
 
 Inside those made-up blocks of lines I also try to maintain a certain order but sometimes I fail and it's not like anyone will ever see this anyway)
 
+<br>
+
 ----
 
 <h3 align="center"> <a name="styling"> styling of this project </a> </h3>
@@ -137,20 +137,16 @@ Inside those made-up blocks of lines I also try to maintain a certain order but 
 **font**
 
 ```css
-font-family: 'Helvetica Neue', Arial, sans-serif;
+font-family: 'Inter', sans-serif;
 ```
 
 **colors**
 
-<p> <span style="color: #f2f2f2"> ⬤ </span> dark grey (background) #f2f2f2</p>
+<p> <span style="color: #2a2c2f"> ⬤ </span> dark grey (background) #2a2c2f</p>
 
-<p> <span style="color: #1f1f1f"> ⬤ </span> light grey (background) #1f1f1f</p>
+<p> <span style="color: #fff"> ⬤ </span> black (text) #fff</p>
 
-<p> <span style="color: #2f80ed"> ⬤ </span> blue (links, figures) #2f80ed</p>
-
-<p> <span style="color: #000000"> ⬤ </span> black (text) #000000</p>
-
-
+<br>
 
 ----
 
@@ -158,50 +154,117 @@ font-family: 'Helvetica Neue', Arial, sans-serif;
 
 ----
 
+<br>
+
 **1 problem**
 
-In ```video``` section I decided to add an ```<abbr>``` tag to give **TED** a translation, but FireFox, GoogleChrome and Safari added an underline to the text. The simpliest solution to get rid of that would be to use css styling, but for some reason it does not override normalize styling, which is this:
+Tag ```<picture>``` creates a small margin based on font-size:
 
+![margin](images/README/margin.png)
+*margins beetwen an element in ```<picture>``` and ```<p>``` without specifying ```font-size```*
+
+<br>
+
+![no-margin](images/README/no-margin.png)
+*margins beetwen an element in ```<picture>``` and ```<p>``` with specifying ```font-size```*
+
+<br>
+
+**solution**
+
+>specifying ```font-size``` to 0 helps:
 ```css
-abbr[title] {
-  border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+.lead__image-container {
+  width: 100%;
+  font-size: 0;
+
+  position: relative;
+
+  margin: 40px auto 0 auto;
 }
 ```
 
-so this does not work:
-```css
-.abbreviation {
-  text-decoration: none;
-}
-```
+<br>
 
-**solution 1**
-
->for some reason a more specific selector overrides normalize styling just fine:
-```css
-.section-title .abbreviation {
-  text-decoration: none;
-}
-```
-
-**solution 2**
-
->not the best way to do the job, but it gets rid of that stupid underline:
-```html
-<abbr style="text-decoration: none;"></abbr>
-```
+---
 
 <br>
 
 **2 problem**
 
-Using BEM Nested structure system caused a problem with absolute paths to files in CSS styling files. For some reason if you ```@import``` a CSS stylesheet it messes up the root folder for that file so all urls to images that I used in single CSS stylesheet stopped working of course.
+For some reason text in a browser doesn't wrap the way it does in a design template, even though all the parametres are specified in a markup.
 
-**solution**
+![template-wrap](images/README/template-wrap.png)
+*the second word is taking another line to fit the box it is in.*
 
->relative path
+<br>
+
+![no-wrap](images/README/no-wrap.png)
+*the second word stays in one line with the first word.*
+
+The problem persists in **Chrome**, **FireFox** and **Safari**.
+
+<br>
+
+**no solution ☹**
+
+<br>
+
+----
+
+<h3 align="center"> <a name="first"> mobile-first vs desktop-first </a> </h3>
+
+----
+
+<br>
+
+I started building the website **desktop-first** but soon figured out that the code becomes so messy with media queris.
+1. The fact that you need to add 1 to a resolution you make a query for is confusing. Doing this kind of math when browsing through the code is too tiresome (*but then again I might do something wrong* ☺).
+2. The fact that width declared in a query does not help you to identify for what screen this query is for is so confusing.
+
+<br>
+
+```css
+@media (max-width: 767px) {
+
+}
+```
+
+>first you need to make an addition of 1 and 767 to get that this break-point is for screens of 768px and higher.
+
+>second this query is not for tablets as the number of pixels may suggest but for mobile screens.
+
+<br>
+
+In addition to the mess above I sometimes had to use ```(min-width: 1280px)``` to set up a markup for wider screens, so chosing desktop-first you start a website kind of in-between resolutions and you just have to write more code to make it clear for a browser.
+
+<br>
+
+So I quickly switched to **mobile-first** and the code is so much cleaner.
+
+```css
+@media (min-width: 320px) {
+
+}
+```
+
+>This is for mobile screens from 320px as the name clearly suggests.
+
+```css
+@media (min-width: 768px) {
+
+}
+```
+
+>This is for tablet screens from 768px as the name clearly suggests.
+
+```css
+@media (min-width: 1024px) {
+
+}
+```
+
+>This is for desktop screens from 1024px to infinity of beautiful pixels.
 
 <br>
 <br>
