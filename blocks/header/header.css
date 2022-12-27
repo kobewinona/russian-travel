@@ -20,7 +20,5 @@
   .header {
     width: calc(100% - (48px * 2));
     max-width: 1184px;
-
-    margin: 28px auto 0 auto;
   }
 }
