@@ -23,6 +23,8 @@
 
 ----
 
+<br>
+
 This project helped me to understand adaptive, flexible and responsive design. I've learnt a lot from building this small page.
 
 The webpage itself is about travelling in Russia and its beauties.
@@ -34,6 +36,8 @@ The webpage itself is about travelling in Russia and its beauties.
 <h3 align="center"> <a name="syntax"> CSS syntax decoration I used in this project </a> </h3>
 
 ----
+
+<br>
 
 To make the code more readable for me I decided to devide rules by their function:
 
