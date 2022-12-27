@@ -5,6 +5,7 @@
   font-weight: 900;
   font-size: clamp(32px, 10vw, 42px);
   line-height: clamp(35px, 10vw, 46px);
+  text-rendering: optimizeLegibility;
 
   margin: 0 auto;
 }
