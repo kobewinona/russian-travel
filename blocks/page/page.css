@@ -3,6 +3,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+
   color: #fff;
 
   background-color: #2a2c2f;
