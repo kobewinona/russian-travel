@@ -1,23 +1,67 @@
+![cover](images/readme/cover.png)
+
 # Russian Travel
 
-[![project](https://svgshare.com/i/p66.svg "github profile")](https://kobewinona.github.io/russian-travel/)
+[![Dima Klimkin Profile Page](https://img.shields.io/badge/Dima_Klimkin-f9f9f9?style=for-the-badge&logoColor=000&logo=github)](https://github.com/kobewinona)
+[![Russian Travel Gh-Pages Page](https://img.shields.io/badge/GitHub_Pages-Russian_Travel-f9f9f9?style=for-the-badge&logo=githubpages)](https://kobewinona.github.io/russian-travel/)
 
-| [![github profile](https://svgshare.com/i/p5A.svg "github profile")](https://github.com/kobewinona) | &copy; dima klimkin |
-| :---: | :---: |
+[![HTML5](https://img.shields.io/badge/HTML5-f9f9f9?style=for-the-badge&logo=HTML5)](https://dev.w3.org/html5/spec-LC/)
+[![CSS3](https://img.shields.io/badge/CSS3-f9f9f9?logoColor=264BDC&style=for-the-badge&logo=CSS3)](https://www.w3.org/TR/CSS/#css)
+[![Git](https://img.shields.io/badge/Git-f9f9f9?style=for-the-badge&logo=git)](https://git-scm.com)
+[![BEM](https://img.shields.io/badge/BEM-f9f9f9?logoColor=black&style=for-the-badge&logo=bem)](https://en.bem.info/methodology/)
 
-| html | css | vscode | git | bem |
-| :---: | :---: | :---: | :---: | :---: |
-| [![html](https://svgshare.com/i/p7U.svg)](https://www.w3.org/html/) | [![css](https://svgshare.com/i/p6o.svg)](https://www.w3schools.com/css/) | [![vs code](https://svgshare.com/i/p5n.svg)](https://code.visualstudio.com/) | [![git](https://svgshare.com/i/p6d.svg)](https://git-scm.com/) | [![bem](https://svgshare.com/i/p6x.svg)](https://en.bem.info/) |
+[![Visual Studio Code](https://img.shields.io/badge/Visual_Studio_Code-f9f9f9?style=for-the-badge&logoColor=0066b8&logo=visualstudiocode)](https://code.visualstudio.com)
+
+## contents
+
+- [about this project](#about-this-project)
+- [what I've learnt doing this project](#what-Ive-learnt-doing-this-project)
+- [mobile-first vs desktop-first](#mobile-first-vs-desktop-first)
+- [CSS syntax decoration I used in this project](#CSS-syntax-structure-I-used-in-this-project)
+- [problems I've encountered doing this project](#problems-Ive-encountered-doing-this-project)
+    - [problem #1](#problem)
 
 ## about this project
 
-This project helped me to understand adaptive, flexible and responsive design. I've learnt a lot from building this small page.
+This project was a great opportunity for me to delve into the world of adaptive, flexible, and responsive design. I learned a lot about media queries and how they can be used to build a website that looks great on any device.
 
-The webpage itself is about travelling in Russia and its beauties.
+Through this project, I was able to gain a deeper understanding of these design principles and how they can be used to create a website that is both visually appealing and user-friendly. The website I created is all about the beauty of travelling in Russia, featuring stunning photos and informative articles about some of the most interesting places to visit. I hope that visitors to the site will find it both engaging and informative, and that it will inspire them to explore all that Russia has to offer.
 
-## CSS syntax decoration I used in this project
+## what I've learnt doing this project
 
-To make the code more readable for me I decided to devide rules by their function:
+As I worked on this project, I discovered that adaptive design allows a website to adapt to the user's screen size, while flexible design makes use of fluid grids and flexible images to ensure that the website looks great on any device. Responsive design, on the other hand, combines the best of both worlds to create a website that not only looks great, but also functions well on all devices.
+
+## mobile-first vs desktop-first
+
+When I began building the website, I started with a `desktop-first` approach, but soon realized that the code became very messy with media queries. One major issue was that I had to do some math to add 1 to a resolution when making a query, which was both confusing and tiresome to browse through. Another issue was that the width declared in a query didn't help me identify which screen the query was for.
+
+```css
+@media (max-width: 767px) {}
+```
+*So here first you need to make an addition of `1` and `767` to get that this breakpoint is for screens of `768px` and higher. Second this query is not for tablets as the number of pixels may suggest but for mobile screens.*
+
+Additionally, I sometimes had to use `(min-width: 1280px)` to set up a markup for wider screens, resulting in a website that was kind of in-between resolutions. This made it necessary to write more code just to make it clear for the browser. So, I quickly switched to a `mobile-first` approach, resulting in much cleaner code.
+
+```css
+@media (min-width: 320px) {}
+```
+*This is for tablet screens from `320px` and higher as the name clearly suggests.*
+
+```css
+@media (min-width: 768px) {}
+```
+*This is for tablet screens from `768px` and higher as the name clearly suggests.*
+
+```css
+@media (min-width: 1024px) {}
+```
+*This is for desktop screens from `1024px` to `infinity` of beautiful pixels.*
+
+I hope this makes sense and is helpful!
+
+## CSS syntax structure I used in this project
+
+To make the code more readable for me, I decided to divide rules by their function:
 
 ```css
 .header__title {
@@ -34,50 +78,47 @@ To make the code more readable for me I decided to devide rules by their functio
 }
 ```
 
-### **1st** block of lines describes an object in generall:
+**1st** block of lines describes an object in general:
 
 ```css
-dev {
+div {
   width: 0;
   min-height: 0;
   box-sizing: border-box;
   overflow: hidden;
 }
 ```
->etc.
 
-### **2nd** block of lines describes text and its decoration:
+**2nd** block of lines describes text and its decoration:
 
 ```css
-dev {
+div {
   color: #fff;
   font-size: 14px;
   font-weight: normal;
   text-align: center;
 }
 ```
->etc.
 
-### **3rd** block of lines describes an object's content layout:
+**3rd** block of lines describes an object's content layout:
 
 ```css
-dev {
+div {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   column-gap: 0;
 }
 ```
->etc.
 
-### **4th** block of lines describes an object's position and size:
+**4th** block of lines describes an object's position and size:
 
 - *rules' order goes from the furthest* ❏ *to the closest* ■ *to content*
 
 - *rules with sides*  *go from top to the left* ↻
 
 ```css
-dev {
+div {
   position: absolute;
   top: 0;
   right: 0;
@@ -86,42 +127,27 @@ dev {
   padding: 0;
 }
 ```
-![position](https://i.postimg.cc/HkN8sKfB/element.png)
 
-### **5th** block of lines is just ```z-index``` ☺.
+**5th** block of lines is just `z-index` ☺.
 
-Inside those made-up blocks of lines I also try to maintain a certain order but sometimes I fail and it's not like anyone will ever see this anyway)
+Within these rules I try to maintain a certain order (still I sometimes fail).
 
-## styling of this project
-*This is here just so I could add those cool bubbles with colors.*
+## problems I've encountered doing this project
 
-**font**
+### problem
 
-```css
-font-family: 'Inter', sans-serif;
-```
-
-**colors**
-
-| dark grey (background) | black (text) |
-| :---: | :---: |
-| color: #2a2c2f | color: #fff |
-
-## difficulties during this project
-
-**1 problem**
-
-Tag ```<picture>``` creates a small margin based on font-size:
+Tag `<picture>` creates a small margin based on font-size:
 
 ![margin](https://i.postimg.cc/xCrTrDXX/margin.png)
-*margins beetwen an element in ```<picture>``` and ```<p>``` without specifying ```font-size```*
+*margins between an element in `<picture>` and `<p>` without specifying `font-size`*
 
 ![no-margin](https://i.postimg.cc/brgz2Z3n/no-margin.png)
-*margins beetwen an element in ```<picture>``` and ```<p>``` with specifying ```font-size```*
+*margins between an element in `<picture>` and `<p>` with specifying `font-size`*
 
-**solution**
+#### solution
 
->specifying ```font-size``` to 0 helps:
+specifying `font-size` to `0` helps:
+
 ```css
 .lead__image-container {
   width: 100%;
@@ -133,63 +159,6 @@ Tag ```<picture>``` creates a small margin based on font-size:
 }
 ```
 
-**2 problem**
+---
 
-For some reason text in a browser doesn't wrap the way it does in a design template, even though all the parametres are specified in a markup.
-
-![template-wrap](https://i.postimg.cc/QCh8tQks/template-wrap.png)
-*the second word is taking another line to fit the box it is in.*
-
-![no-wrap](https://i.postimg.cc/59S9rrbt/no-wrap.png)
-*the second word stays in one line with the first word.*
-
-The problem persists in **Chrome**, **FireFox** and **Safari**.
-
-**no solution ☹**
-
-## mobile-first vs desktop-first
-
-I started building the website **desktop-first** but soon figured out that the code becomes so messy with media queris.
-1. The fact that you need to add 1 to a resolution you make a query for is confusing. Doing this kind of math when browsing through the code is too tiresome (*but then again I might do something wrong* ☺).
-2. The fact that width declared in a query does not help you to identify for what screen this query is for is so confusing.
-
-```css
-@media (max-width: 767px) {
-
-}
-```
-
->first you need to make an addition of 1 and 767 to get that this break-point is for screens of 768px and higher.
-
->second this query is not for tablets as the number of pixels may suggest but for mobile screens.
-
-In addition to the mess above I sometimes had to use ```(min-width: 1280px)``` to set up a markup for wider screens, so chosing desktop-first you start a website kind of in-between resolutions and you just have to write more code to make it clear for a browser.
-
-So I quickly switched to **mobile-first** and the code is so much cleaner.
-
-```css
-@media (min-width: 320px) {
-
-}
-```
-
->This is for mobile screens from 320px as the name clearly suggests.
-
-```css
-@media (min-width: 768px) {
-
-}
-```
-
->This is for tablet screens from 768px as the name clearly suggests.
-
-```css
-@media (min-width: 1024px) {
-
-}
-```
-
->This is for desktop screens from 1024px to infinity of beautiful pixels.
-
-| thanks to yandex practicum team | [![yandex praktikum](https://svgshare.com/i/p77.svg)](https://practicum.yandex.ru/) | ♥ |
-| :---: | :---: | :---: |
+&hearts; thanks to yandex practicum team
