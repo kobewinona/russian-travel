@@ -19,7 +19,6 @@
 - [mobile-first vs desktop-first](#mobile-first-vs-desktop-first)
 - [CSS syntax decoration I used in this project](#CSS-syntax-structure-I-used-in-this-project)
 - [problems I encountered doing this project](#problems-I-encountered-doing-this-project)
-    - [problem #1](#problem)
 
 ## about this project
 
