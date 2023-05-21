@@ -18,7 +18,7 @@
 - [what I learned doing this project](#what-I-learned-doing-this-project)
 - [mobile-first vs desktop-first](#mobile-first-vs-desktop-first)
 - [CSS syntax decoration I used in this project](#CSS-syntax-structure-I-used-in-this-project)
-- [problems I've encountered doing this project](#problems-Ive-encountered-doing-this-project)
+- [problems I encountered doing this project](#problems-I-encountered-doing-this-project)
     - [problem #1](#problem)
 
 ## about this project
@@ -132,7 +132,7 @@ div {
 
 Within these rules I try to maintain a certain order (still I sometimes fail).
 
-## problems I've encountered doing this project
+## problems I encountered doing this project
 
 ### problem
 
