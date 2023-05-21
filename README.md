@@ -15,7 +15,7 @@
 ## contents
 
 - [about this project](#about-this-project)
-- [what I've learnt doing this project](#what-Ive-learnt-doing-this-project)
+- [what I learned doing this project](#what-I-learned-doing-this-project)
 - [mobile-first vs desktop-first](#mobile-first-vs-desktop-first)
 - [CSS syntax decoration I used in this project](#CSS-syntax-structure-I-used-in-this-project)
 - [problems I've encountered doing this project](#problems-Ive-encountered-doing-this-project)
@@ -27,7 +27,7 @@ This project was a great opportunity for me to delve into the world of adaptive,
 
 Through this project, I was able to gain a deeper understanding of these design principles and how they can be used to create a website that is both visually appealing and user-friendly. The website I created is all about the beauty of travelling in Russia, featuring stunning photos and informative articles about some of the most interesting places to visit. I hope that visitors to the site will find it both engaging and informative, and that it will inspire them to explore all that Russia has to offer.
 
-## what I've learnt doing this project
+## what I learned doing this project
 
 As I worked on this project, I discovered that adaptive design allows a website to adapt to the user's screen size, while flexible design makes use of fluid grids and flexible images to ensure that the website looks great on any device. Responsive design, on the other hand, combines the best of both worlds to create a website that not only looks great, but also functions well on all devices.
 
