@@ -23,7 +23,7 @@
 
 ## about this project
 
-This project was a great opportunity for me to delve into the world of adaptive, flexible, and responsive design. I learned a lot about media queries and how they can be used to build a website that looks great on any device.
+This project was a great opportunity for me to delve into the world of `adaptive`, `flexible`, and `responsive` design. I learned a lot about media queries and how they can be used to build a website that looks great on any device.
 
 Through this project, I was able to gain a deeper understanding of these design principles and how they can be used to create a website that is both visually appealing and user-friendly. The website I created is all about the beauty of travelling in Russia, featuring stunning photos and informative articles about some of the most interesting places to visit. I hope that visitors to the site will find it both engaging and informative, and that it will inspire them to explore all that Russia has to offer.
 
